@@ -1,9 +1,9 @@
 # FreeOnePageWebsite
 This is my free version of one page website v1.0.
-
-+> Slider js pure. <br><br><br><br>
-+> Dropdown Menu.<br><br><br><br>
-+> Responsive.<br><br><br>
-+> Hamburger Menu on mobile.<br><br>
+<br><br>
++> <b>Slider js pure.<b> <br>
++> <b>Dropdown Menu.<b><br>
++> <b>Responsive.<b><br>
++> <b>Hamburger Menu on mobile.<b><br><br>
 
 
