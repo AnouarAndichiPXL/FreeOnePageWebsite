@@ -38,7 +38,7 @@ function sliderAutomatique(){
 
     setInterval(function(){ 
         if(sliderIndex > 3) {sliderIndex= 1}
-        slider.style.backgroundImage  = "linear-gradient(to bottom,rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),url('../images/" + "slide_0" + sliderIndex +  ".jpg  ')";
+        slider.style.backgroundImage  = "linear-gradient(to bottom,rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),url('/test/images/" + "slide_0" + sliderIndex +  ".jpg  ')";
         sliderIndex++;
     }, 4000);
 }
