@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+/* =========  Start Navbar Css  ========= */
+nav {
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+nav ul {
+  list-style: none;
+  margin: 0px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  padding: 15px 30px;
+  font-weight: bold;
+  box-sizing: content-box;
+}
+nav ul li a:hover {
+  background-color: rgb(61, 93, 163);
+  transition: 500ms;
+}
+
+.hamburger {
+  display: none;
+  color: #fff;
+  padding: 17px;
+  float: right;
+}
+
+.hamburger:hover {
+  color: #fff;
+  background-color: rgb(61, 93, 163);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+nav .more {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+nav .more span {
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+}
+nav .more span:hover {
+  background-color: rgb(61, 93, 163);
+  transition: 500ms;
+}
+.more:hover .dropdown {
+  display: block;
+  transition: 500ms;
+}
+nav .dropdown {
+  display: none;
+  position: absolute;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  min-width: 160px;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 10px;
+}
+nav .dropdown a {
+  display: block;
+}
+
+/* =========  End Navbar Css  ========= */
+
+/* =========  Start Slider Css  ========= */
+.slider {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../images/slide_01.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.slider h1 {
+  color: #fff;
+  font-size: 70px;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+}
+.slider p {
+  color: rgb(172, 172, 172);
+  text-align: center;
+  font-size: 26px;
+}
+.down-btn {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  position: absolute;
+  cursor: pointer;
+}
+.down-btn i {
+  font-size: 55px;
+  color: rgb(61, 93, 163);
+}
+
+/* =========  End Slider Css  ========= */
+
+/* =========  Start About Css  ========= */
+.about {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.about h3 {
+  color: #20456e;
+}
+.about-left {
+  height: 500px;
+  width: 700px;
+  padding: 20px;
+}
+.about-left h1 {
+  margin-bottom: 20px;
+  color: #20456e;
+}
+.about-right {
+  height: 500px;
+  width: 700px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-right p {
+  color: #20456e;
+}
+.clear {
+  clear: both;
+}
+.about-left .icons {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-left .icons .icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.about-left .icons div i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.about-left .icons div span {
+  font-size: 18px;
+}
+.about-right p {
+  font-size: 18px;
+}
+.about-right a {
+  text-decoration: none;
+  color: rgb(6, 117, 207);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* =========  End About Css  ========= */
+
+/* =========  Start Contact Css  ========= */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #d6d6d6, #a3bff5);
+  background: linear-gradient(to right, #516f91, #103986);
+}
+.contact .left-side {
+  width: 25%;
+  height: 500px;
+}
+.contact .right-side {
+  width: 60%;
+  height: 500px;
+  padding: 50px;
+}
+
+.contact .right-side form input {
+  margin: 10px;
+  width: 45%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.contact .right-side form textarea {
+  margin: 10px;
+  width: 92%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.contact .right-side form button {
+  width: 150px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+}
+.contact .right-side form button:hover {
+  background-color: rgb(193, 193, 196);
+  transition: 500ms;
+}
+
+.contact .left-side {
+  padding: 50px;
+}
+
+.contact .left-side .contact-icons {
+  margin: 30px;
+}
+.contact .left-side .contact-icons .contact-icon {
+  display: flex;
+  align-items: center;
+}
+.contact .left-side .contact-icons .contact-icon i {
+  color: #fff;
+  font-size: 50px;
+  padding: 20px;
+}
+.contact .left-side .contact-icons .contact-icon span,
+.contact .left-side .contact-icons .contact-icon span a {
+  font-size: 26px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* =========  End Contact Css  ========= */
+
+/* =========  Start Footer Css  ========= */
+.footer {
+  height: 400px;
+  width: 100%;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+
+.footer h1 {
+  font-size: 55px;
+  text-shadow: 10px 10px 10px black;
+}
+.footer p {
+  font-size: 26px;
+  text-align: center;
+}
+
+.footer form {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 500px;
+  margin-right: 30px;
+  border: none;
+}
+.footer input:hover,
+.footer button:hover {
+  background-color: rgb(193, 193, 196);
+  transition: 500ms;
+}
+.footer button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========  End Footer Css  ========= */
+
+/* =========  Making the website responsive  ========= */
+
+@media screen and (max-width: 1200px) {
+  .about {
+    display: block;
+  }
+  .about-left {
+    width: 100%;
+    height: auto;
+  }
+  .about-left .icons .icon {
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+  .about-right {
+    display: block;
+    width: 100%;
+  }
+  .about-left .icons {
+    width: 100%;
+  }
+
+  .contact {
+    display: block;
+  }
+  .contact .left-side {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+  .contact .left-side .contact-icons {
+    margin: 0;
+  }
+  .contact .right-side {
+    width: 100%;
+  }
+  .footer p {
+    display: none;
+  }
+  .footer input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about {
+    width: 100%;
+  }
+  nav {
+    height: auto;
+  }
+  .nav-items li {
+    display: none;
+    width: 100%;
+    cursor: pointer;
+    transition: 3s;
+  }
+  .nav-items li:hover {
+    background-color: rgb(61, 93, 163);
+    transition: 500ms;
+  }
+  .nav-item a {
+    padding: 0;
+  }
+  .nav-item a:hover {
+    background-color: transparent;
+  }
+  nav .dropdown a {
+    padding: 10px;
+  }
+  nav .dropdown a:hover {
+    background-color: rgb(61, 93, 163);
+    transition: 500ms;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 560px) {
+  .about {
+    width: 100%;
+    height: auto;
+  }
+  .about-left .icons .icon {
+    margin-right: 0;
+    height: 150px;
+    width: 150px;
+  }
+  .contact .right-side {
+    height: auto;
+    padding: 0;
+  }
+  .about-right {
+    height: auto;
+  }
+  .down-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact .right-side form input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .about-left {
+    display: none;
+  }
+}
